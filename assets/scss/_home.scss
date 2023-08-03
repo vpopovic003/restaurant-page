@@ -1,0 +1,91 @@
+#welcome {
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  width: 100%;
+  height: 100vh;
+
+  .welcome-menu {
+    background: white;
+    padding: 50px;
+    position: relative;
+    .logo{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+      img{
+        max-width: 100px;
+      }
+    }
+    .menu {
+      margin-bottom: 50px;
+      .menu-title {
+        text-transform: uppercase;
+        color: #0917ce;
+        font-weight: 700;
+        font-size: 1.2rem;
+        border-bottom: 1px solid #e2eaef;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+      .links{
+        li {
+          a {
+            font-size: 1.1rem;
+            color: black;
+            font-weight: 700;
+            text-decoration: none;
+            margin-bottom: 1.4rem;
+            display: block;
+            transition: color .3s ease-in-out;
+            &:hover {
+              color: red;
+            }
+          }
+        }
+      }
+    }
+
+    .social-icons {
+      display: flex;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #c2c8cc;
+        font-size: 0.9rem;
+        text-decoration: none;
+        color: white;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+    }
+
+    .location {
+      align-self: center;
+      position: absolute;
+      bottom: 100px;
+
+      .address {
+        color: #7a8d99;
+        margin-bottom: 20px;
+      }
+  
+      .phone-number {
+        a {
+          color: #0917ce;
+          font-size: 2rem;
+          font-weight: 700;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+    
+
+  .welcome-jumbo {
+    background: red;
+    width:100%;
+  }
+}
